@@ -1,0 +1,22 @@
+use(types)
+use(mad)
+## this is a comment 
+
+def square(num x) -> num
+  return (num) x.power(2)
+end
+
+def main() -> int
+  let x = num(stof(input("Enter a number: ")))
+  let sqr = square(x)
+  ## print(typeid(x).name())
+  print(sqr.val, false)
+  print(" : ", false)
+  print(sqr.length())
+
+  for i : range(10)
+    print(i)
+  end
+
+  return 1
+end
